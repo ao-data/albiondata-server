@@ -1,0 +1,12 @@
+source 'https://rubygems.org'
+
+gem 'sinatra', '~> 3.0', '>= 3.0.5'
+gem 'rack-protection', '~> 3.0', '>= 3.0.5'
+gem 'rack-throttle', '~> 0.7.1'
+gem 'puma', '~> 6.1', '>= 6.1.1'
+gem 'pry', '~> 0.14.2'
+gem 'nats-pure', '~> 2.2', '>= 2.2.1'
+gem 'redis', '~> 5.0', '>= 5.0.6'
+gem 'sidekiq', '~> 7.0', '>= 7.0.6'
+gem 'sequel', '~> 5.66'
+gem 'activesupport', '~> 7.0', '>= 7.0.4.2'
