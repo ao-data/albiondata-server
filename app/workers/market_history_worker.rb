@@ -3,9 +3,6 @@ class MarketHistoryWorker
 
   def perform (year, month, delete=false)
     m = MarketHistoryService.new
-
-    if delete == false
-      m.export_month(year, month)
-    end
+    m.export_and_delete(year, month)
   end
 end

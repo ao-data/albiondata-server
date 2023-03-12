@@ -15,6 +15,7 @@ GEM
     minitest (5.18.0)
     mustermann (3.0.0)
       ruby2_keywords (~> 0.0.1)
+    mysql2 (0.5.5)
     nats-pure (2.2.1)
     nio4r (2.5.8)
     pry (0.14.2)
@@ -30,7 +31,7 @@ GEM
       rack (>= 1.0.0)
     redis (5.0.6)
       redis-client (>= 0.9.0)
-    redis-client (0.13.0)
+    redis-client (0.14.0)
       connection_pool
     ruby2_keywords (0.0.5)
     sequel (5.66.0)
@@ -54,6 +55,7 @@ PLATFORMS
 
 DEPENDENCIES
   activesupport (~> 7.0, >= 7.0.4.2)
+  mysql2 (~> 0.5.5)
   nats-pure (~> 2.2, >= 2.2.1)
   pry (~> 0.14.2)
   puma (~> 6.1, >= 6.1.1)
