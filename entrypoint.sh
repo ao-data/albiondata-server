@@ -36,4 +36,11 @@ case $1 in
     child=$!
     wait "$child"
     ;;
+
+  sleep)
+    echo "Service type is sleep"
+    sleep infinity
+    child=$!
+    wait "$child"
+    ;;
 esac

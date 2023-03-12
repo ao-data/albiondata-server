@@ -1,9 +1,11 @@
 require 'active_support/all'
 require 'date'
-require 'time'
+require 'mysql2'
+require 'sequel'
 require 'sinatra'
 require 'sidekiq'
 require 'sidekiq/web'
+require 'time'
 
 require File.expand_path('config', __dir__)
 require File.expand_path('app/services/market_history', __dir__)
@@ -18,6 +20,10 @@ class AlbionServer < Sinatra::Base
     set bind: "0.0.0.0"
     set port: 3000
     set server: "puma"
+  end
+
+  def self.db
+    Sequel.mysql2(ENV['MYSQL_DB'], user: ENV['MYSQL_USER'], password: ENV['MYSQL_PWD'], host: 'mysql')
   end
 
   def initialize
