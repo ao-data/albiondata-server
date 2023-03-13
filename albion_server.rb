@@ -10,6 +10,7 @@ require 'time'
 require File.expand_path('config', __dir__)
 require File.expand_path('app/services/market_history', __dir__)
 require File.expand_path('app/workers/market_history_worker', __dir__)
+require File.expand_path('app/workers/sleep_worker', __dir__)
 
 class AlbionServer < Sinatra::Base
   configure do
