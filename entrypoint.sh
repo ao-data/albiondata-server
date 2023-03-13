@@ -32,7 +32,7 @@ case $1 in
 
   sidekiq)
     echo "Run mode is rspec"
-    bundle exec sidekiq -r ./albion_server.rb
+    bundle exec sidekiq -c ${SIDEKIQ_THREADS:-5} -r ./albion_server.rb
     child=$!
     wait "$child"
     ;;
