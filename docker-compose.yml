@@ -22,6 +22,7 @@ services:
     volumes:
       - ./:/usr/src/app
     environment:
+      MYSQL_HOST: ${MYSQL_HOST}
       MYSQL_USER: ${MYSQL_USER}
       MYSQL_PWD: ${MYSQL_PWD}
       MYSQL_DB: ${MYSQL_DB}
