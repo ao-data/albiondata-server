@@ -14,7 +14,7 @@ class MarketHistoryService
 
     cmd = [
       'mysqldump',
-      '-h mysql',
+      "-h #{ENV['MYSQL_HOST']}",
       "-u#{ENV['MYSQL_USER']}",
       "-p#{ENV['MYSQL_PWD']}",
       '--compact',
