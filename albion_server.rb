@@ -24,7 +24,7 @@ class AlbionServer < Sinatra::Base
   end
 
   def self.db
-    Sequel.mysql2(ENV['MYSQL_DB'], user: ENV['MYSQL_USER'], password: ENV['MYSQL_PWD'], host: 'mysql')
+    Sequel.mysql2(ENV['MYSQL_DB'], user: ENV['MYSQL_USER'], password: ENV['MYSQL_PWD'], host: ENV['MYSQL_HOST'])
   end
 
   def initialize
