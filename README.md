@@ -1,3 +1,7 @@
+# THIS REPO IS ARCHIVED AND IS NO LONGER IN USE/DEVELOPMENT! THE REPLACEMENT CAN BE FOUND [HERE](https://github.com/ao-data/albiondata-server-rails)! (ao-data/albiondata-server-rails)
+<br/><br/><br/><br/><br/><br/><br/><br/>
+
+
 # Albion Online Data Server
 
 The aim of this project is to condense the amount of running services on the docker stack and to provide a place to add/migrate functionality needed to run the entire stack.
